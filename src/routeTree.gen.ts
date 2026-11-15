@@ -10,33 +10,102 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as LeiturasRouteImport } from './routes/leituras'
+import { Route as ReflexaoRouteImport } from './routes/reflexao'
+import { Route as TrabalhoGrupoRouteImport } from './routes/trabalho-grupo'
+import { Route as TrabalhoParesRouteImport } from './routes/trabalho-pares'
+import { Route as TrabalhoPesquisaRouteImport } from './routes/trabalho-pesquisa'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LeiturasRoute = LeiturasRouteImport.update({
+  id: '/leituras',
+  path: '/leituras',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReflexaoRoute = ReflexaoRouteImport.update({
+  id: '/reflexao',
+  path: '/reflexao',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TrabalhoGrupoRoute = TrabalhoGrupoRouteImport.update({
+  id: '/trabalho-grupo',
+  path: '/trabalho-grupo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TrabalhoParesRoute = TrabalhoParesRouteImport.update({
+  id: '/trabalho-pares',
+  path: '/trabalho-pares',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TrabalhoPesquisaRoute = TrabalhoPesquisaRouteImport.update({
+  id: '/trabalho-pesquisa',
+  path: '/trabalho-pesquisa',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/leituras': typeof LeiturasRoute
+  '/reflexao': typeof ReflexaoRoute
+  '/trabalho-grupo': typeof TrabalhoGrupoRoute
+  '/trabalho-pares': typeof TrabalhoParesRoute
+  '/trabalho-pesquisa': typeof TrabalhoPesquisaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/leituras': typeof LeiturasRoute
+  '/reflexao': typeof ReflexaoRoute
+  '/trabalho-grupo': typeof TrabalhoGrupoRoute
+  '/trabalho-pares': typeof TrabalhoParesRoute
+  '/trabalho-pesquisa': typeof TrabalhoPesquisaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/leituras': typeof LeiturasRoute
+  '/reflexao': typeof ReflexaoRoute
+  '/trabalho-grupo': typeof TrabalhoGrupoRoute
+  '/trabalho-pares': typeof TrabalhoParesRoute
+  '/trabalho-pesquisa': typeof TrabalhoPesquisaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/leituras'
+    | '/reflexao'
+    | '/trabalho-grupo'
+    | '/trabalho-pares'
+    | '/trabalho-pesquisa'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/leituras'
+    | '/reflexao'
+    | '/trabalho-grupo'
+    | '/trabalho-pares'
+    | '/trabalho-pesquisa'
+  id:
+    | '__root__'
+    | '/'
+    | '/leituras'
+    | '/reflexao'
+    | '/trabalho-grupo'
+    | '/trabalho-pares'
+    | '/trabalho-pesquisa'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  LeiturasRoute: typeof LeiturasRoute
+  ReflexaoRoute: typeof ReflexaoRoute
+  TrabalhoGrupoRoute: typeof TrabalhoGrupoRoute
+  TrabalhoParesRoute: typeof TrabalhoParesRoute
+  TrabalhoPesquisaRoute: typeof TrabalhoPesquisaRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +117,51 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/leituras': {
+      id: '/leituras'
+      path: '/leituras'
+      fullPath: '/leituras'
+      preLoaderRoute: typeof LeiturasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reflexao': {
+      id: '/reflexao'
+      path: '/reflexao'
+      fullPath: '/reflexao'
+      preLoaderRoute: typeof ReflexaoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/trabalho-grupo': {
+      id: '/trabalho-grupo'
+      path: '/trabalho-grupo'
+      fullPath: '/trabalho-grupo'
+      preLoaderRoute: typeof TrabalhoGrupoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/trabalho-pares': {
+      id: '/trabalho-pares'
+      path: '/trabalho-pares'
+      fullPath: '/trabalho-pares'
+      preLoaderRoute: typeof TrabalhoParesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/trabalho-pesquisa': {
+      id: '/trabalho-pesquisa'
+      path: '/trabalho-pesquisa'
+      fullPath: '/trabalho-pesquisa'
+      preLoaderRoute: typeof TrabalhoPesquisaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  LeiturasRoute: LeiturasRoute,
+  ReflexaoRoute: ReflexaoRoute,
+  TrabalhoGrupoRoute: TrabalhoGrupoRoute,
+  TrabalhoParesRoute: TrabalhoParesRoute,
+  TrabalhoPesquisaRoute: TrabalhoPesquisaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
