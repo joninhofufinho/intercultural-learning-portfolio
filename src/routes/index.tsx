@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { boasVindas, fotosPartida, images, info, quemSouEu, referenciasUC, sections } from "@/content/portfolio";
+import { boasVindas, fotosPartida, info, quemSouEu, referenciasUC, sections } from "@/content/portfolio";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -37,42 +37,64 @@ function FolhaDeRosto() {
   return (
     <>
       {/* Capa */}
-      <section className="mx-auto max-w-6xl px-5 pt-14 sm:px-8 sm:pt-20">
-        <div className="grid gap-12 lg:grid-cols-12">
-          <div className="animate-rise lg:col-span-8">
+      <section className="mx-auto max-w-6xl px-5 pt-12 sm:px-8 sm:pt-16">
+        <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
+          <div className="animate-rise lg:col-span-6">
             <p className="kicker text-primary">Portefólio · {info.estudante}</p>
-            <h1 className="mt-5 text-5xl font-medium leading-[1] text-foreground sm:text-6xl lg:text-7xl">
+            <h1 className="mt-5 text-5xl font-medium leading-[1] text-foreground sm:text-6xl">
               Entre leituras, reflexões,
               <br />
               <em className="font-normal text-primary">ideias e diálogos</em>
             </h1>
-            <p className="mt-8 max-w-xl font-serif text-xl italic leading-relaxed text-muted-foreground sm:text-2xl">
+            <p className="mt-6 max-w-xl font-serif text-xl italic leading-relaxed text-muted-foreground sm:text-2xl">
               {info.subtitulo} em {info.unidadeCurricular}
             </p>
+            <p className="mt-8 font-serif text-2xl text-primary">{boasVindas.titulo}</p>
           </div>
-          <dl className="animate-rise self-end border-t-2 border-foreground lg:col-span-4 [animation-delay:150ms]">
-            {dados.map(([k, v]) => (
-              <div key={k} className="grid grid-cols-[8.5rem_1fr] gap-3 border-b border-border py-3 text-sm">
-                <dt className="kicker pt-0.5 text-muted-foreground">{k}</dt>
-                <dd className="font-semibold text-foreground">{v}</dd>
-              </div>
-            ))}
-          </dl>
+          <figure className="animate-rise lg:col-span-6 [animation-delay:150ms]">
+            <img
+              src={fotosPartida.src}
+              alt="Colagem de fotografias pessoais: tatuagem, espetáculos, manifestações, pintura, animais e viagens"
+              width={1080}
+              height={1080}
+              className="aspect-square w-full rounded-sm object-cover shadow-paper"
+            />
+            <figcaption className="mt-3 text-sm italic text-muted-foreground">{fotosPartida.legenda}</figcaption>
+          </figure>
         </div>
+      </section>
 
-        <figure className="animate-rise mt-14 [animation-delay:250ms]">
-          <img
-            src={images.capa}
-            alt="Mãos de várias pessoas, de diferentes tons de pele, unidas sobre um tecido com padrões de várias culturas"
-            width={1600}
-            height={1008}
-            className="aspect-[16/9] w-full rounded-sm object-cover shadow-paper sm:aspect-[21/9]"
-          />
-        </figure>
-
-        <div className="mx-auto mt-16 max-w-3xl text-center">
-          <h2 className="text-3xl font-medium text-primary sm:text-4xl">{boasVindas.titulo}</h2>
-          <p className="mt-5 text-lg leading-relaxed text-foreground">{boasVindas.texto}</p>
+      {/* Quem sou eu */}
+      <section className="mt-24 bg-secondary py-20" aria-labelledby="quem">
+        <div className="mx-auto grid max-w-6xl gap-12 px-5 sm:px-8 lg:grid-cols-12">
+          <figure className="lg:col-span-5">
+            <img
+              src={quemSouEu.foto}
+              alt={`Fotografia de ${quemSouEu.nome}`}
+              loading="lazy"
+              width={1600}
+              height={1200}
+              className="aspect-[4/5] w-full rounded-sm object-cover object-[55%_center] shadow-paper"
+            />
+          </figure>
+          <div className="lg:col-span-7">
+            <p className="kicker text-secondary-foreground">Quem sou eu?</p>
+            <h2 id="quem" className="mt-3 text-5xl font-medium text-secondary-foreground sm:text-6xl">
+              {quemSouEu.nome}
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-secondary-foreground">{boasVindas.texto}</p>
+            <dl className="mt-8 border-t-2 border-secondary-foreground">
+              {dados.map(([k, v]) => (
+                <div
+                  key={k}
+                  className="grid gap-1 border-b border-secondary-foreground/20 py-3 text-sm sm:grid-cols-[10rem_1fr] sm:gap-3"
+                >
+                  <dt className="kicker pt-0.5 text-secondary-foreground/75">{k}</dt>
+                  <dd className="font-semibold text-secondary-foreground">{v}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
         </div>
       </section>
 
@@ -125,49 +147,6 @@ function FolhaDeRosto() {
               </li>
             ))}
           </ul>
-        </div>
-      </section>
-
-      {/* Fotografias de partida + Quem sou eu */}
-      <section className="mt-24 bg-secondary py-20" aria-labelledby="fotos">
-        <div className="mx-auto grid max-w-6xl gap-12 px-5 sm:px-8 lg:grid-cols-12 lg:items-center">
-          <figure className="lg:col-span-7">
-            <img
-              src={fotosPartida.src}
-              alt="Colagem de fotografias pessoais: tatuagem, espetáculos, manifestações, pintura e viagens"
-              loading="lazy"
-              width={1080}
-              height={1080}
-              className="aspect-square w-full rounded-sm object-cover shadow-paper"
-            />
-          </figure>
-          <div className="lg:col-span-5">
-            <p className="kicker text-secondary-foreground">Ponto de partida</p>
-            <h2 id="fotos" className="mt-3 text-4xl font-medium text-secondary-foreground sm:text-5xl">
-              Fotografias de partida
-            </h2>
-            <p className="mt-4 font-serif text-lg italic leading-relaxed text-secondary-foreground">
-              {fotosPartida.legenda}
-            </p>
-
-            <div className="mt-12 flex items-center gap-6 border-t border-secondary-foreground/20 pt-8">
-              <img
-                src={quemSouEu.foto}
-                alt={`Fotografia de ${quemSouEu.nome}`}
-                loading="lazy"
-                width={1600}
-                height={1200}
-                className="h-32 w-32 shrink-0 rounded-full object-cover shadow-paper"
-              />
-              <div>
-                <p className="kicker text-secondary-foreground">Quem sou eu?</p>
-                <p className="mt-1 font-serif text-3xl text-secondary-foreground">{quemSouEu.nome}</p>
-                <p className="mt-1 text-sm text-secondary-foreground">
-                  {info.curso} · {info.especializacao}
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
