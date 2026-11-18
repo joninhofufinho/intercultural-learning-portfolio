@@ -4,4 +4,5 @@
 - [x] Juntar todas as informações da Joni na secção "Quem sou eu?"
 - [x] Verificar em telemóvel e computador
 - [x] Trocar as cores do site para combinarem com as fotografias (Colagem pop)
+- [x] Experimentada a paleta Noite de palco; Joni pediu para voltar à anterior (Colagem pop)
 - [ ] Aguarda Joni: bio pessoal, textos reais dos trabalhos, lista de referências da UC
