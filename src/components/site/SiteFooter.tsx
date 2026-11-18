@@ -9,8 +9,9 @@ export function SiteFooter() {
           <p className="mt-2 font-serif text-2xl">{info.titulo}</p>
         </div>
         <div className="text-sm opacity-80 sm:text-right">
-          <p>{info.estudante} · {info.numero}</p>
-          <p>{info.curso}</p>
+          <p>{info.estudante}</p>
+          <p>{info.curso} · {info.especializacao}</p>
+          <p>{info.unidadeCurricular} · {info.docente}</p>
           <p>{info.local}, {info.data}</p>
         </div>
       </div>

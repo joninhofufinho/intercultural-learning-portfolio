@@ -4,7 +4,7 @@ import { SectionBody, SectionHero, SectionPager, sectionHead } from "@/component
 
 export const Route = createFileRoute("/reflexao")({
   head: () =>
-    sectionHead("Reflexão", "Reflexão final sobre o percurso na unidade curricular de Educação Intercultural."),
+    sectionHead("Reflexão", "Reflexão final sobre o percurso na unidade curricular de Educação Intercultural e Mediação."),
   component: Reflexao,
 });
 
@@ -13,7 +13,7 @@ function Reflexao() {
     <>
       <SectionHero
         path="/reflexao"
-        lead="Um olhar para trás sobre o semestre — o que mudou na forma como penso a escola, a diversidade e o meu futuro papel como professora."
+        lead="Um olhar para trás sobre o semestre — o que mudou na forma como penso a educação, a diversidade e a mediação."
         imageAlt="Jovem a escrever num diário junto a uma janela soalheira"
       />
       <SectionBody>

@@ -79,7 +79,7 @@ export function SectionPager({ path }: { path: SectionPath }) {
 }
 
 export function sectionHead(title: string, description: string) {
-  const full = `${title} · Portefólio de Educação Intercultural`;
+  const full = `${title} · Portefólio de Joni Freitas`;
   return {
     meta: [
       { title: full },

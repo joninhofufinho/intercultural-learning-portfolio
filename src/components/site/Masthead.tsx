@@ -15,7 +15,7 @@ export function Masthead() {
             </span>
           </Link>
           <span className="hidden text-sm text-muted-foreground md:block">
-            {info.anoLetivo} · {info.semestre}
+            {info.estudante} · {info.anoLetivo}
           </span>
         </div>
         <nav aria-label="Secções" className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">

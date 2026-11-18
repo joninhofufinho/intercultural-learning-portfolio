@@ -4,7 +4,10 @@ import { SectionBody, SectionHero, SectionPager, sectionHead } from "@/component
 
 export const Route = createFileRoute("/leituras")({
   head: () =>
-    sectionHead("Leituras das Aulas", "Sínteses e comentários críticos aos textos lidos em cada aula de Educação Intercultural."),
+    sectionHead(
+      "Leituras das Aulas",
+      "Leituras da unidade curricular de Educação Intercultural e Mediação, com ideias-chave e acesso aos textos.",
+    ),
   component: Leituras,
 });
 
@@ -13,36 +16,60 @@ function Leituras() {
     <>
       <SectionHero
         path="/leituras"
-        lead="Para cada sessão, registo a referência do texto, as ideias-chave e um comentário pessoal sobre o que a leitura me trouxe."
+        lead="Os textos que acompanharam as aulas: a referência, as ideias que mais me interpelaram e, quando possível, o acesso ao texto."
         imageAlt="Livros abertos e notas de leitura sobre uma mesa de madeira"
       />
       <SectionBody>
-        <ol className="space-y-0">
+        <ol>
           {leituras.map((l) => (
-            <li key={l.sessao} className="grid gap-6 border-b border-border py-10 first:pt-0 md:grid-cols-12">
-              <div className="md:col-span-3">
-                <p className="kicker text-primary">{l.sessao}</p>
-                <p className="mt-1 font-serif text-lg italic text-muted-foreground">{l.data}</p>
+            <li key={l.titulo} className="grid gap-10 border-b border-border py-10 first:pt-0 md:grid-cols-12">
+              <div className="md:col-span-4">
+                <p className="kicker text-primary">
+                  {l.sessao}
+                  {l.data ? ` · ${l.data}` : ""}
+                </p>
+                {l.capa && (
+                  <img
+                    src={l.capa}
+                    alt={`Capa do livro ${l.titulo}`}
+                    loading="lazy"
+                    width={600}
+                    height={711}
+                    className="mt-4 w-full max-w-xs rounded-sm shadow-paper"
+                  />
+                )}
               </div>
-              <div className="md:col-span-9">
+              <div className="md:col-span-8">
                 <p className="text-sm font-semibold text-muted-foreground">{l.autor}</p>
-                <h2 className="mt-1 text-3xl font-medium">{l.titulo}</h2>
-                <div className="mt-5 grid gap-8 lg:grid-cols-2">
-                  <div>
-                    <h3 className="kicker text-muted-foreground">Ideias-chave</h3>
-                    <ul className="mt-3 space-y-2">
-                      {l.ideias.map((i) => (
-                        <li key={i} className="flex gap-3">
-                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sage" />
-                          <span>{i}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <blockquote className="border-l-2 border-primary pl-5 font-serif text-lg italic leading-relaxed text-foreground">
+                <h2 className="mt-1 text-4xl font-medium">{l.titulo}</h2>
+                {l.editora && <p className="mt-2 font-serif italic text-muted-foreground">{l.editora}</p>}
+
+                <h3 className="kicker mt-8 text-muted-foreground">{l.ideiasTitulo ?? "Ideias-chave"}</h3>
+                <ul className="mt-4 space-y-3">
+                  {l.ideias.map((i) => (
+                    <li key={i} className="flex gap-3 text-lg leading-relaxed">
+                      <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-sage" />
+                      <span>{i}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {l.comentario && (
+                  <blockquote className="mt-8 border-l-2 border-primary pl-5 font-serif text-lg italic leading-relaxed text-foreground">
                     {l.comentario}
                   </blockquote>
-                </div>
+                )}
+
+                {l.pdf && (
+                  <a
+                    href={l.pdf}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-8 inline-flex items-center gap-2 rounded-sm bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-terracotta-deep"
+                  >
+                    Ler o texto (PDF) →
+                  </a>
+                )}
               </div>
             </li>
           ))}

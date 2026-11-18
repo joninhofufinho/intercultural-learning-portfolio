@@ -83,15 +83,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Portefólio de Educação Intercultural" },
+      { title: "Portefólio de Joni Freitas · Educação Intercultural e Mediação" },
       {
         name: "description",
-        content: "Portefólio da unidade curricular de Educação Intercultural: leituras, trabalhos e reflexão.",
+        content: "Portefólio de Joni Freitas na unidade curricular de Educação Intercultural e Mediação: leituras, trabalhos e reflexão.",
       },
-      { property: "og:title", content: "Portefólio de Educação Intercultural" },
+      { property: "og:title", content: "Portefólio de Joni Freitas · Educação Intercultural e Mediação" },
       {
         property: "og:description",
-        content: "Portefólio da unidade curricular de Educação Intercultural: leituras, trabalhos e reflexão.",
+        content: "Portefólio de Joni Freitas na unidade curricular de Educação Intercultural e Mediação: leituras, trabalhos e reflexão.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

@@ -5,22 +5,41 @@ import paresImg from "@/assets/pares.jpg";
 import pesquisaImg from "@/assets/pesquisa.jpg";
 import grupoImg from "@/assets/grupo.jpg";
 import reflexaoImg from "@/assets/reflexao.jpg";
+import colagemAsset from "@/assets/wix/fotos-de-partida-colagem.jpg.asset.json";
+import joniAsset from "@/assets/wix/joni-freitas.jpg.asset.json";
+import cucheCapaAsset from "@/assets/wix/cuche-capa.jpg.asset.json";
+import cuchePdfAsset from "@/assets/wix/cuche-a-nocao-de-cultura.pdf.asset.json";
 
 export const images = { capa, leiturasImg, paresImg, pesquisaImg, grupoImg, reflexaoImg };
 
 export const info = {
-  titulo: "Portefólio de Educação Intercultural",
-  subtitulo: "Leituras, trabalhos e reflexões sobre a diversidade na escola",
-  estudante: "Nome do Estudante",
-  numero: "N.º 00000",
-  curso: "Licenciatura em Educação Básica",
-  instituicao: "Escola Superior de Educação",
-  unidadeCurricular: "Educação Intercultural",
-  docente: "Prof.ª Doutora Nome da Docente",
-  anoLetivo: "2026/2027",
-  semestre: "1.º semestre",
+  titulo: "Entre leituras, reflexões, ideias e diálogos",
+  subtitulo: "Um percurso de aprendizagem",
+  estudante: "Joni Freitas",
+  curso: "Mestrado em Educação e Formação",
+  especializacao: "Desenvolvimento Social e Cultural",
+  instituicao: "Instituto de Educação da Universidade de Lisboa",
+  unidadeCurricular: "Educação Intercultural e Mediação",
+  docente: "Prof.ª Ana Paula Caetano",
+  anoLetivo: "2026/27",
   local: "Lisboa",
   data: "novembro de 2026",
+};
+
+export const boasVindas = {
+  titulo: "Bem-vindes ao meu portefólio!",
+  texto:
+    "Este espaço foi construído no âmbito da unidade curricular de Educação Intercultural e Mediação, lecionada pela professora Ana Paula Caetano, inserida no Mestrado em Educação e Formação, com especialização em Desenvolvimento Social e Cultural, no Instituto de Educação da Universidade de Lisboa, no ano letivo 2026/27.",
+};
+
+export const quemSouEu = {
+  foto: joniAsset.url,
+  nome: "Joni Freitas",
+};
+
+export const fotosPartida = {
+  src: colagemAsset.url,
+  legenda: "Colagem de fotografias de partida: memórias, lugares, pessoas e causas que trago comigo.",
 };
 
 export type SectionPath =
@@ -74,13 +93,8 @@ export const sections: {
   },
 ];
 
-export const fotosPartida = [
-  { src: capa, legenda: "Mãos que se encontram — o ponto de partida da unidade curricular." },
-  { src: grupoImg, legenda: "Primeira sessão: mapear as nossas origens." },
-  { src: leiturasImg, legenda: "Os primeiros textos e as primeiras perguntas." },
-];
-
 export const referenciasUC = [
+  "Cuche, D. (2002). A noção de cultura nas ciências sociais (2.ª ed.). EDUSC.",
   "Abdallah-Pretceille, M. (2001). La educación intercultural. Idea Books.",
   "Banks, J. A. (2016). Cultural diversity and education: Foundations, curriculum, and teaching (6.ª ed.). Routledge.",
   "Candau, V. M. (2008). Direitos humanos, educação e interculturalidade: As tensões entre igualdade e diferença. Revista Brasileira de Educação, 13(37), 45–56.",
@@ -91,68 +105,40 @@ export const referenciasUC = [
   "Perotti, A. (1997). Apologia do intercultural. Secretariado Coordenador dos Programas de Educação Multicultural.",
 ];
 
-export const leituras = [
+export type Leitura = {
+  sessao: string;
+  data?: string;
+  autor: string;
+  titulo: string;
+  editora?: string;
+  capa?: string;
+  pdf?: string;
+  ideiasTitulo?: string;
+  ideias: string[];
+  comentario?: string;
+};
+
+export const leituras: Leitura[] = [
   {
-    sessao: "Aula 1",
-    data: "16 set.",
-    autor: "Peres, A. N. (2000)",
-    titulo: "Educação intercultural: Utopia ou realidade?",
+    sessao: "Leitura 1",
+    autor: "Cuche, Denys",
+    titulo: "A noção de cultura nas ciências sociais",
+    editora: "EDUSC · 2.ª edição",
+    capa: cucheCapaAsset.url,
+    pdf: cuchePdfAsset.url,
+    ideiasTitulo: "Perguntas que o livro levanta",
     ideias: [
-      "Distinção entre multiculturalidade (facto) e interculturalidade (projeto).",
-      "A escola como espaço de encontro e não apenas de coexistência.",
+      "Se todo o ser humano é um ser cultural, como recebe a cultura do seu grupo e até que ponto o seu comportamento é por ela determinado?",
+      "Um mesmo indivíduo pode mudar de cultura ou participar simultaneamente de várias culturas?",
+      "Como se dá o encontro das culturas?",
+      "As culturas dos grupos socialmente dominados estão destinadas a desaparecer ou a imitar as culturas dos grupos dominantes?",
     ],
-    comentario:
-      "Este texto obrigou-me a repensar a ideia de que basta 'juntar' culturas diferentes na mesma sala. A interculturalidade exige intenção pedagógica, diálogo e reciprocidade.",
-  },
-  {
-    sessao: "Aula 2",
-    data: "23 set.",
-    autor: "Perotti, A. (1997)",
-    titulo: "Apologia do intercultural",
-    ideias: [
-      "O intercultural como resposta ética e política à diversidade.",
-      "Crítica às abordagens folclóricas da cultura.",
-    ],
-    comentario:
-      "Reconheci práticas que já observei em estágio — a 'semana das culturas' — que, embora bem-intencionadas, reduzem a cultura a gastronomia e trajes.",
-  },
-  {
-    sessao: "Aula 3",
-    data: "30 set.",
-    autor: "Cardoso, C. (1996)",
-    titulo: "Educação multicultural: Percursos para práticas reflexivas",
-    ideias: [
-      "O professor reflexivo face aos seus próprios preconceitos.",
-      "Currículo oculto e expectativas diferenciadas.",
-    ],
-    comentario:
-      "A leitura mais pessoal até agora: fez-me identificar estereótipos que trago comigo e que podem condicionar o modo como olho para os alunos.",
-  },
-  {
-    sessao: "Aula 4",
-    data: "7 out.",
-    autor: "Banks, J. A. (2016)",
-    titulo: "As cinco dimensões da educação multicultural",
-    ideias: [
-      "Integração de conteúdos, construção do conhecimento, redução do preconceito, pedagogia da equidade e cultura escolar.",
-    ],
-    comentario:
-      "O modelo de Banks dá uma grelha prática para avaliar projetos escolares. Usei-o mais tarde no trabalho de grupo.",
-  },
-  {
-    sessao: "Aula 5",
-    data: "14 out.",
-    autor: "Freire, P. (1970)",
-    titulo: "Pedagogia do oprimido (excertos)",
-    ideias: ["Educação bancária vs. educação problematizadora.", "Diálogo como condição de libertação."],
-    comentario:
-      "Freire lembra que não há interculturalidade sem escuta verdadeira — o aluno não é um recipiente, é um sujeito com história.",
   },
 ];
 
 export const trabalhoPares = {
   titulo: "Entre duas línguas: o caso da Amina",
-  elementos: ["Nome do Estudante", "Nome do Colega"],
+  elementos: ["Joni Freitas", "Nome do Colega"],
   data: "outubro de 2026",
   objetivo:
     "Analisar um estudo de caso de uma aluna recém-chegada a uma escola do 1.º ciclo e propor estratégias de acolhimento à luz das leituras da unidade curricular.",
@@ -196,7 +182,7 @@ export const trabalhoPesquisa = {
 export const trabalhoGrupo = {
   titulo: "Mapa das nossas histórias",
   subtitulo: "Proposta de projeto intercultural para uma turma do 3.º ano",
-  elementos: ["Nome do Estudante", "Colega 2", "Colega 3", "Colega 4"],
+  elementos: ["Joni Freitas", "Colega 2", "Colega 3", "Colega 4"],
   data: "novembro de 2026",
   descricao: [
     "O grupo desenhou um projeto de quatro semanas em que cada aluno investiga a história da sua família — de onde vieram, que línguas falam, que tradições guardam — e a partilha num grande mapa coletivo da turma.",
@@ -219,7 +205,7 @@ export const reflexao = {
   },
   paragrafos: [
     "Quando comecei esta unidade curricular, pensava na interculturalidade como um tema — algo a 'tratar' em determinadas datas ou atividades. Ao longo do semestre, percebi que é sobretudo uma postura: um modo de olhar, escutar e organizar a sala de aula.",
-    "As leituras deram-me linguagem para nomear coisas que já sentia, mas não sabia explicar. Os trabalhos práticos, sobretudo o trabalho a pares e o de grupo, mostraram-me que a diversidade também existe entre nós, futuros professores, e que negociar perspetivas é já um exercício intercultural.",
+    "As leituras deram-me linguagem para nomear coisas que já sentia, mas não sabia explicar. Os trabalhos práticos, sobretudo o trabalho a pares e o de grupo, mostraram-me que a diversidade também existe entre nós, estudantes, e que negociar perspetivas é já um exercício intercultural.",
     "O maior desafio foi confrontar os meus próprios estereótipos. Não foi confortável, mas foi necessário. Saio com mais perguntas do que certezas — e parece-me que é esse o ponto de partida certo.",
   ],
   aprendizagens: [
