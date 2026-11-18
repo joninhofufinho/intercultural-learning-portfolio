@@ -54,6 +54,18 @@ function FolhaDeRosto() {
         </div>
       </section>
 
+      {/* Apresentação */}
+      <section className="mx-auto mt-14 max-w-3xl px-5 sm:px-8" aria-labelledby="apresentacao">
+        <p className="kicker text-primary" id="apresentacao">
+          Apresentação
+        </p>
+        <div className="mt-4 space-y-4 font-serif text-lg leading-relaxed text-foreground/90 sm:text-xl">
+          {boasVindas.texto.map((p) => (
+            <p key={p}>{p}</p>
+          ))}
+        </div>
+      </section>
+
       {/* Quem sou eu */}
       <section className="mt-24 bg-secondary py-20" aria-labelledby="quem">
         <div className="mx-auto grid max-w-6xl gap-12 px-5 sm:px-8 lg:grid-cols-12">

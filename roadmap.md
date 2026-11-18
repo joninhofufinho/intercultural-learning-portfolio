@@ -3,6 +3,7 @@
 - [x] Colagem do Wix como imagem principal da folha de rosto
 - [x] Escrever a bio pessoal da Joni na secção "Quem sou eu?" (4 parágrafos + frase de destaque)
 - [x] Eliminar de "Quem sou eu?" o parágrafo da UC e a lista de dados do curso
+- [x] Texto de apresentação da UC debaixo da foto da colagem
 - [x] Verificar em telemóvel e computador
 - [x] Trocar as cores do site para combinarem com as fotografias (Colagem pop)
 - [ ] Aguarda Joni: textos reais dos trabalhos (pares, pesquisa, grupo, reflexão)

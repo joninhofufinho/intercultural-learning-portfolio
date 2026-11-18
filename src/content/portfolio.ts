@@ -29,8 +29,10 @@ export const info = {
 
 export const boasVindas = {
   titulo: "Bem-vindes ao meu portefólio!",
-  texto:
+  texto: [
     "Este espaço foi construído no âmbito da unidade curricular de Educação Intercultural e Mediação, lecionada pela professora Ana Paula Caetano, inserida no Mestrado em Educação e Formação, com especialização em Desenvolvimento Social e Cultural, no Instituto de Educação da Universidade de Lisboa, no ano letivo 2026/27.",
+    "Aqui apresento de forma detalhada e reflexiva todo o trabalho desenvolvido na UC, que inclui elementos das leituras reflexivas de textos trabalhados em aula, apresentações do trabalho a pares a realizar no início da UC, reflexão sobre trabalho de grupo de apresentação de investigação, realizado em aula, e uma reflexão global, nomeadamente sobre os processos educativos e aprendizagens.",
+  ],
 };
 
 export const quemSouEu = {
