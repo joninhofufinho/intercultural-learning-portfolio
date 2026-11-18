@@ -1,8 +1,10 @@
 # Roadmap
 - [x] Trazer dados, fotografias e leitura do Wix para o portefólio
 - [x] Colagem do Wix como imagem principal da folha de rosto
-- [x] Juntar todas as informações da Joni na secção "Quem sou eu?"
+- [x] Escrever a bio pessoal da Joni na secção "Quem sou eu?" (4 parágrafos + frase de destaque)
+- [x] Eliminar de "Quem sou eu?" o parágrafo da UC e a lista de dados do curso
 - [x] Verificar em telemóvel e computador
 - [x] Trocar as cores do site para combinarem com as fotografias (Colagem pop)
-- [x] Experimentada a paleta Noite de palco; Joni pediu para voltar à anterior (Colagem pop)
-- [ ] Aguarda Joni: bio pessoal, textos reais dos trabalhos, lista de referências da UC
+- [ ] Aguarda Joni: textos reais dos trabalhos (pares, pesquisa, grupo, reflexão)
+- [ ] Aguarda Joni: lista de referências da UC (só Cuche está confirmada)
+- [ ] Aguarda Joni: decidir as imagens de cabeçalho das 5 secções (tons quentes antigos)

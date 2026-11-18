@@ -18,6 +18,7 @@ export const info = {
   estudante: "Joni Freitas",
   curso: "Mestrado em Educação e Formação",
   especializacao: "Desenvolvimento Social e Cultural",
+  licenciatura: "Biorrecursos",
   instituicao: "Instituto de Educação da Universidade de Lisboa",
   unidadeCurricular: "Educação Intercultural e Mediação",
   docente: "Prof.ª Ana Paula Caetano",
@@ -35,6 +36,16 @@ export const boasVindas = {
 export const quemSouEu = {
   foto: joniAsset.url,
   nome: "Joni Freitas",
+  bio: [
+    "Sou uma pessoa não binária trans masc e queer, de 24 anos. Sou licenciado em Biorrecursos e encontro-me atualmente a frequentar o Mestrado em Educação e Formação.",
+    "Apesar de ter iniciado o meu caminho académico em engenharia, acabei por redescobrir a minha vocação na educação. Percebi que tenho um grande gosto por partilhar conhecimento, despertar a curiosidade e contribuir para as aprendizagens dos outros.",
+    "Fora do contexto académico e profissional, sou uma pessoa com interesses bastante diversos. Admiro particularmente a cultura drag e ballroom, espaços de expressão artística, criatividade, identidade e resistência. Também gosto de puzzles, matemática e xadrez, que alimentam o meu lado mais estratégico e desafiam o meu raciocínio. Sou apaixonado pela natureza e pelos animais.",
+    "Gosto de questionar o mundo e desafiar as normas e expectativas sociais. Acredito que somos todos iguais em valor, mas únicos naquilo que somos.",
+  ],
+  citacao: {
+    texto: "We are all born naked and the rest is drag.",
+    autor: "RuPaul",
+  },
 };
 
 export const fotosPartida = {

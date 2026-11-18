@@ -21,16 +21,6 @@ export const Route = createFileRoute("/")({
   component: FolhaDeRosto,
 });
 
-const dados: [string, string][] = [
-  ["Estudante", info.estudante],
-  ["Curso", info.curso],
-  ["Especialização", info.especializacao],
-  ["Instituição", info.instituicao],
-  ["Unidade curricular", info.unidadeCurricular],
-  ["Docente", info.docente],
-  ["Ano letivo", info.anoLetivo],
-];
-
 function FolhaDeRosto() {
   const destaque = sections[0]!;
   const resto = sections.slice(1);
@@ -82,20 +72,22 @@ function FolhaDeRosto() {
             <h2 id="quem" className="mt-3 text-5xl font-medium text-secondary-foreground sm:text-6xl">
               {quemSouEu.nome}
             </h2>
-            <p className="mt-6 text-lg leading-relaxed text-secondary-foreground">{boasVindas.texto}</p>
-            <dl className="mt-8 border-t-2 border-secondary-foreground">
-              {dados.map(([k, v]) => (
-                <div
-                  key={k}
-                  className="grid gap-1 border-b border-secondary-foreground/20 py-3 text-sm sm:grid-cols-[10rem_1fr] sm:gap-3"
-                >
-                  <dt className="kicker pt-0.5 text-secondary-foreground/75">{k}</dt>
-                  <dd className="font-semibold text-secondary-foreground">{v}</dd>
-                </div>
+            <div className="mt-6 space-y-5 text-lg leading-relaxed text-secondary-foreground">
+              {quemSouEu.bio.map((p) => (
+                <p key={p}>{p}</p>
               ))}
-            </dl>
+            </div>
           </div>
         </div>
+
+        <figure className="mx-auto mt-16 max-w-3xl border-t-2 border-secondary-foreground px-5 pt-10 text-center sm:px-8">
+          <blockquote className="font-serif text-3xl italic leading-snug text-secondary-foreground sm:text-4xl">
+            “{quemSouEu.citacao.texto}”
+          </blockquote>
+          <figcaption className="kicker mt-4 text-secondary-foreground/70">
+            — {quemSouEu.citacao.autor}
+          </figcaption>
+        </figure>
       </section>
 
       {/* Índice */}
