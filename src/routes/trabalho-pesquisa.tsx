@@ -49,7 +49,7 @@ function TrabalhoPesquisa() {
             </ul>
           </div>
           <div className="lg:col-span-5">
-            <div className="rounded-sm bg-forest p-8 text-forest-foreground">
+            <div className="rounded-sm bg-ink p-8 text-ink-foreground">
               <p className="kicker opacity-75">Conclusão</p>
               <p className="mt-3 font-serif text-lg leading-relaxed">{t.conclusao}</p>
             </div>

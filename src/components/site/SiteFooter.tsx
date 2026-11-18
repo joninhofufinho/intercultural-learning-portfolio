@@ -2,7 +2,7 @@ import { info } from "@/content/portfolio";
 
 export function SiteFooter() {
   return (
-    <footer className="mt-24 bg-forest text-forest-foreground">
+    <footer className="mt-24 bg-ink text-ink-foreground">
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-12 sm:flex-row sm:items-end sm:justify-between sm:px-8">
         <div>
           <p className="kicker opacity-70">{info.instituicao}</p>

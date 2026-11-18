@@ -36,13 +36,13 @@ function Reflexao() {
             <ul className="mt-5 space-y-3">
               {r.aprendizagens.map((a) => (
                 <li key={a} className="flex gap-3 border-b border-border pb-3">
-                  <span className="text-sage">●</span>
+                  <span className="text-sky">●</span>
                   <span>{a}</span>
                 </li>
               ))}
             </ul>
           </div>
-          <div className="rounded-sm bg-forest p-8 text-forest-foreground">
+          <div className="rounded-sm bg-ink p-8 text-ink-foreground">
             <p className="kicker opacity-75">Daqui para a frente</p>
             <p className="mt-3 font-serif text-xl italic leading-relaxed">{r.futuro}</p>
           </div>

@@ -48,7 +48,7 @@ function Leituras() {
                 <ul className="mt-4 space-y-3">
                   {l.ideias.map((i) => (
                     <li key={i} className="flex gap-3 text-lg leading-relaxed">
-                      <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-sage" />
+                      <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-sky" />
                       <span>{i}</span>
                     </li>
                   ))}
@@ -65,7 +65,7 @@ function Leituras() {
                     href={l.pdf}
                     target="_blank"
                     rel="noreferrer"
-                    className="mt-8 inline-flex items-center gap-2 rounded-sm bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-terracotta-deep"
+                    className="mt-8 inline-flex items-center gap-2 rounded-sm bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-deep"
                   >
                     Ler o texto (PDF) →
                   </a>
