@@ -118,6 +118,10 @@ export const referenciasUC = [
   "Perotti, A. (1997). Apologia do intercultural. Secretariado Coordenador dos Programas de Educação Multicultural.",
 ];
 
+export type ReflexaoBloco =
+  | { tipo: "p"; texto: string }
+  | { tipo: "citacao"; texto: string; autor: string };
+
 export type Leitura = {
   sessao: string;
   data?: string;
@@ -128,6 +132,7 @@ export type Leitura = {
   pdf?: string;
   ideiasTitulo?: string;
   ideias: string[];
+  reflexao?: { titulo: string; blocos: ReflexaoBloco[] };
   comentario?: string;
 };
 
@@ -146,6 +151,126 @@ export const leituras: Leitura[] = [
       "Como se dá o encontro das culturas?",
       "As culturas dos grupos socialmente dominados estão destinadas a desaparecer ou a imitar as culturas dos grupos dominantes?",
     ],
+    reflexao: {
+      titulo: "Reflexão",
+      blocos: [
+        {
+          tipo: "p",
+          texto:
+            "A palavra cultura tem origem no latim culturae e deriva do verbo colere, que significa «ação de tratar» e «cultivar», tendo posteriormente adquirido um sentido mais figurado, referindo-se ao «cultivo» da mente, do conhecimento e das capacidades humanas.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "A cultura está diretamente relacionada a mais do que uma área (educação, psicologia, sociologia, antropologia, etc.). As ciências sociais têm tido um papel central na definição deste termo e na formulação de teorias à volta dele.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "Afirmar que a cultura teve origem nos EUA é bastante redutor. Sendo a cultura associada à diversidade de grupos, hábitos, crenças e simbologia diferentes, a origem da cultura remonta a muitos anos atrás, muito antes do séc. XIX, quando a antropologia americana começou o estudo deste conceito — ainda por cima quando algumas nações europeias já tentavam pintar um retrato da cultura muito antes.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "No século XVIII, segundo Cuche, a «cultura» era sempre citada no singular, refletindo o universalismo e o humanismo do pensamento filosófico europeu: a cultura é própria do Homem. Falar em cultura no singular é limitante, especialmente perante tamanha diversidade de grupos de indivíduos.",
+        },
+        {
+          tipo: "citacao",
+          texto: "Por natureza, todos os homens são iguais. São os seus hábitos que os separam.",
+          autor: "Confúcio",
+        },
+        {
+          tipo: "p",
+          texto:
+            "É possível conciliar os dois conceitos se ligarmos o universalismo à biologia. Todo o ser humano tem um antepassado comum, o que nos deixa ao mesmo nível: não existem culturas superiores a outras. Esta visão anti-racista é compatível com o relativismo cultural de Franz Boas, apesar de este defender um pensamento particularista, segundo o qual cada cultura tem os seus elementos. Apresenta um pensamento muito à frente do seu tempo, tendo em conta que foi contemporâneo de uma época de bastantes conflitos de origem racial na Europa e no mundo.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "Imaginemos uma família brasileira que imigrou para Portugal e mantém o hábito de celebrar o Carnaval. Segundo o particularismo, o Carnaval é uma prática cultural brasileira, ligada à história e às tradições daquela sociedade. Já a interpretação universalista reconhece que a celebração está relacionada com necessidades humanas comuns, como reunir a comunidade e festejar. Estas duas vertentes são conciliáveis e ainda permitem debater a adaptação a diferentes culturas e o difusionismo.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "O difusionismo acaba por implicar que culturas geograficamente mais próximas são mais semelhantes por terem um contacto direto, porém o exemplo do Carnaval, que é celebrado em Portugal e no Brasil, apresenta um contra-argumento. Estes países apresentam muitas semelhanças culturais, ainda que separados por um oceano.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "No artigo de leitura facultativa, a cultura é apresentada como metáfora de água e ar. A cultura é como a água para um peixe ou como o ar que respiramos: está sempre à nossa volta, não nos damos conta da sua presença, mas ela influencia a nossa forma de agir, comunicar e pensar. Só quando estabelecemos contacto com pessoas com referências culturais diferentes ou mudamos de ambiente é que percebemos melhor a cultura que nos rodeia.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "Os empréstimos culturais ultrapassam fronteiras, até porque as próprias culturas o fazem. Dentro de fronteiras e dentro de cada indivíduo existem inúmeras culturas. Porque é que as culturas adotam elementos de outras culturas? Os empréstimos culturais enriquecem ou ameaçam a identidade cultural de uma sociedade? Porquê? Qual é a diferença entre empréstimo cultural e apropriação cultural? Quando uma prática cultural é adotada por outra sociedade, mantém o mesmo significado? Se todas as culturas estão constantemente a mudar através do contacto com outras culturas, até que ponto podemos falar em identidade cultural?",
+        },
+        {
+          tipo: "p",
+          texto:
+            "Boas oferece uma resposta: um elemento emprestado não é simplesmente copiado — pode ser transformado, adaptado e recriado pela cultura que o recebe, distinguindo-se da apropriação por haver respeito mútuo como base desta troca. A meu ver, cada indivíduo é uma área cultural. Todos temos um core, um centro culturalmente estático onde definimos os nossos valores, identidade e cultura, mas somos sujeitos a mudanças à nossa volta que enriquecem a nossa perspetiva do que nos rodeia.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "Todavia, estar em contacto com outras culturas também não implica necessariamente absorvê-las. Quando as pessoas imigram, é muito mais comum procurarem uma comunidade com uma cultura mais parecida com a sua cultura de origem do que procederem a uma integração. Vivemos numa bolha cultural, que é um lugar de conforto. Será que somos tão mutáveis como a própria cultura? Por que oferecemos resistência à integração, ainda que subconsciente? Acredito que a resposta está presente numa espécie de egocentrismo cultural.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "Esta forma de egocentrismo é bastante compatível com o funcionalismo, que diz que uma cultura se desenvolve em torno de uma função, sendo mais fechada à mudança. Existem culturas associadas ao clima, como a cultura da vodka na Rússia, que se desenvolveu como resposta a uma necessidade. Uma pessoa que emigre do Brasil para a Rússia terá de mudar esse aspeto da sua cultura para responder a esta mudança externa. No entanto, a resposta a mudanças internas é uma limitação do funcionalismo e, na minha opinião, também deste egocentrismo cultural.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "Ruth Benedict defendia os modelos culturais, mas não me parece pertinente meter culturas em caixas, até porque acredito que um indivíduo contém uma pluralidade de culturas. Porém, reconheço que a pluralidade dessas culturas influencia a personalidade de cada indivíduo. Se a cultura traduz o contexto social de cada um, também a personalidade o faz, havendo uma interligação entre estes conceitos, sem que estes sejam exclusivamente relacionados.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "As teorias de Margaret Mead demonstram que as características consideradas masculinas ou femininas variam entre sociedades e não podem ser explicadas somente pela biologia, apoiando a ideia de que o contexto social influencia a personalidade, ao influenciar as normas e os valores com que crescemos. Esta perspetiva supõe que o género é uma construção social difundida segundo a cultura em que nos inserimos.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "Apesar dos progressos alcançados, na sociedade portuguesa continuam a existir expectativas relativamente ao comportamento, à aparência e aos papéis familiares de cada género, e quem não corresponde a esses padrões pode ser alvo de discriminação, exclusão ou violência. Muitas vezes, em relação aos homens europeus, ouvimos a expressão «gay or european» pelo facto de os homens europeus serem culturalmente mais femininos e de essa feminilidade estar associada à homossexualidade.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "Considero particularmente relevante esta distinção entre cultura e natureza. A existência de normas sociais sobre género não significa que todas as pessoas se identifiquem com elas: a cultura impõe rótulos invisíveis às pessoas por meio de expectativas. Esta pode influenciar a maneira como percecionamos a nossa identidade, mas não deve funcionar como uma autoridade que decide quem somos. O reconhecimento de que existem diferentes formas de viver e de expressões de género reforça a importância de uma sociedade em que cada pessoa pode construir a sua identidade sem ter de justificar a sua existência.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "A socialização é definida como um processo que permite a transmissão de normas e valores que tendemos a interiorizar desde a infância. A ideia de que uma pessoa bem socializada é aquela que se adapta às normas dominantes traduz-se numa confusão entre os conceitos de integração social e conformidade, e pode servir para legitimar a marginalização de quem vive de maneira diferente. Uma pessoa não deve ser considerada menos válida por rejeitar expectativas e questionar tradições.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "É durante a infância, na escola, que os indivíduos têm o seu primeiro choque cultural, pelo facto de entrarem em contacto com uma realidade mais ampla e diversa. A socialização e a educação nesta fase primordial da vida influenciam e solidificam uma grande parte dos valores de cada pessoa. Porém, identifico-me com a ideia de que a socialização não termina na infância e de que as pessoas podem rever os seus valores quando entram em contacto com novas realidades. Crescer implica também desenvolver pensamento crítico e questionar aquilo que nos foi transmitido.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "No que toca à influência da cultura nos sistemas de valores de cada um, enquanto pessoa ateia considero legítimo que cada indivíduo acredite numa religião, em várias ou nenhuma, mas não considero legítimo que a religião seja imposta a quem não a partilha, muito menos que sirva de justificação para limitar os direitos de outras pessoas. As convicções religiosas devem poder coexistir com perspetivas agnósticas, sem que tenham o direito de controlar a vida privada da população. As normas que uma sociedade considera tradicionais podem parecer naturais a quem cresceu com elas, mas isso não significa que sejam moralmente justas. Na minha perspetiva, os costumes podem e devem ser questionados, sobretudo quando contribuem para perpetuar desigualdades, restringir direitos ou silenciar minorias.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "A minha perspetiva política leva-me a considerar que a liberdade individual não pode ser analisada isoladamente das condições sociais e económicas. Embora cada pessoa deva ter o direito à liberdade, esse direito é condicionado quando existem desigualdades que impedem o acesso à educação, à habitação e à saúde. E essas desigualdades também podem ser impostas por determinadas culturas, nomeadamente em países menos desenvolvidos. Portanto, até que ponto a cultura não pode representar uma limitação em certos casos?",
+        },
+        {
+          tipo: "p",
+          texto:
+            "Os indivíduos não são apenas receptores passivos da cultura, interpretando os valores que recebem e adaptando-os às suas experiências. Isto demonstra que a mudança cultural não depende apenas das maiorias: resulta, também, das experiências individuais, da ação coletiva de quem questiona as normas existentes e da resistência de grupos discriminados. Os movimentos feministas e LGBT+ são exemplos de ações que, dentro de algumas culturas, permitiram combater a ideia de que determinados modelos familiares, identidades ou orientações sexuais são os únicos legítimos.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "Para além disto, nenhuma cultura é completamente homogénea, e reduzir uma sociedade a uma única identidade cultural seria ignorar a sua diversidade, pois as pessoas que pertencem à mesma sociedade não partilham necessariamente os mesmos valores e experiências. É precisamente aqui que considero relevante a abordagem interacionista apresentada no capítulo. Se a cultura é produzida e transformada através das interações individuais ou coletivas, então não deve ser entendida como fixa e superior às pessoas que a constituem. As culturas mudam porque as pessoas estabelecem novas relações e têm experiências diferentes, questionando o que antes parecia evidente. Também por isso o conceito de subcultura deve ser questionado: chamar «subcultura» a um grupo minoritário pode sugerir, mesmo que involuntariamente, um carácter inferior face a uma suposta cultura dominante.",
+        },
+      ],
+    },
   },
 ];
 

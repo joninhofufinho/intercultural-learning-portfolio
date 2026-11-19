@@ -54,6 +54,26 @@ function Leituras() {
                   ))}
                 </ul>
 
+                {l.reflexao && (
+                  <div className="mt-10 rounded-sm border border-border bg-card p-6 sm:p-9">
+                    <h3 className="kicker text-primary">{l.reflexao.titulo}</h3>
+                    <div className="prose-editorial mt-5 max-w-none">
+                      {l.reflexao.blocos.map((b, i) =>
+                        b.tipo === "citacao" ? (
+                          <figure key={i} className="my-8 border-l-2 border-primary pl-5">
+                            <blockquote className="font-serif text-xl italic leading-relaxed text-foreground">
+                              «{b.texto}»
+                            </blockquote>
+                            <figcaption className="kicker mt-2 text-primary">— {b.autor}</figcaption>
+                          </figure>
+                        ) : (
+                          <p key={i}>{b.texto}</p>
+                        ),
+                      )}
+                    </div>
+                  </div>
+                )}
+
                 {l.comentario && (
                   <blockquote className="mt-8 border-l-2 border-primary pl-5 font-serif text-lg italic leading-relaxed text-foreground">
                     {l.comentario}

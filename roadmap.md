@@ -6,6 +6,7 @@
 - [x] Texto de apresentação da UC debaixo da foto da colagem
 - [x] Verificar em telemóvel e computador
 - [x] Trocar as cores do site para combinarem com as fotografias (Colagem pop)
+- [x] Reflexão sobre a leitura de Cuche acrescentada às Leituras (depois das perguntas)
 - [ ] Aguarda Joni: textos reais dos trabalhos (pares, pesquisa, grupo, reflexão)
 - [ ] Aguarda Joni: lista de referências da UC (só Cuche está confirmada)
 - [ ] Aguarda Joni: decidir as imagens de cabeçalho das 5 secções (tons quentes antigos)
