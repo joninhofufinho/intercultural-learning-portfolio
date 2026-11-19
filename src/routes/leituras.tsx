@@ -87,7 +87,7 @@ function Leituras() {
                     rel="noreferrer"
                     className="mt-8 inline-flex items-center gap-2 rounded-sm bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-deep"
                   >
-                    Síntese da Leitura →
+                    {l.pdfEtiqueta ?? "Síntese da Leitura"} →
                   </a>
                 )}
               </div>

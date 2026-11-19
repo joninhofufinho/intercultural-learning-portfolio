@@ -9,6 +9,7 @@ import colagemAsset from "@/assets/wix/fotos-de-partida-colagem.jpg.asset.json";
 import joniAsset from "@/assets/wix/joni-freitas.jpg.asset.json";
 import cucheCapaAsset from "@/assets/wix/cuche-capa.jpg.asset.json";
 import sintesePdfAsset from "@/assets/wix/sintese-cuche.pdf.asset.json";
+import discursoPdfAsset from "@/assets/discurso-intercultural.pdf.asset.json";
 
 export const images = { capa, leiturasImg, paresImg, pesquisaImg, grupoImg, reflexaoImg };
 
@@ -130,6 +131,7 @@ export type Leitura = {
   editora?: string;
   capa?: string;
   pdf?: string;
+  pdfEtiqueta?: string;
   ideiasTitulo?: string;
   ideias: string[];
   reflexao?: { titulo: string; blocos: ReflexaoBloco[] };
