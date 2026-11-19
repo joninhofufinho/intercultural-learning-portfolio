@@ -8,7 +8,7 @@ import reflexaoImg from "@/assets/reflexao.jpg";
 import colagemAsset from "@/assets/wix/fotos-de-partida-colagem.jpg.asset.json";
 import joniAsset from "@/assets/wix/joni-freitas.jpg.asset.json";
 import cucheCapaAsset from "@/assets/wix/cuche-capa.jpg.asset.json";
-import cuchePdfAsset from "@/assets/wix/cuche-a-nocao-de-cultura.pdf.asset.json";
+import sintesePdfAsset from "@/assets/wix/sintese-cuche.pdf.asset.json";
 
 export const images = { capa, leiturasImg, paresImg, pesquisaImg, grupoImg, reflexaoImg };
 
@@ -143,7 +143,7 @@ export const leituras: Leitura[] = [
     titulo: "A noção de cultura nas ciências sociais",
     editora: "EDUSC · 2.ª edição",
     capa: cucheCapaAsset.url,
-    pdf: cuchePdfAsset.url,
+    pdf: sintesePdfAsset.url,
     ideiasTitulo: "Perguntas que o livro levanta",
     ideias: [
       "Se todo o ser humano é um ser cultural, como recebe a cultura do seu grupo e até que ponto o seu comportamento é por ela determinado?",
