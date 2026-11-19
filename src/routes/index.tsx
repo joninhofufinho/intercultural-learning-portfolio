@@ -57,7 +57,7 @@ function FolhaDeRosto() {
       {/* Apresentação */}
       <section className="mx-auto mt-14 max-w-3xl px-5 sm:px-8" aria-labelledby="apresentacao">
         <p className="kicker text-primary" id="apresentacao">
-          Apresentação
+          {"\n"}
         </p>
         <div className="mt-4 space-y-4 font-serif text-lg leading-relaxed text-foreground/90 sm:text-xl">
           {boasVindas.texto.map((p) => (
