@@ -141,10 +141,10 @@ export const leituras: Leitura[] = [
     sessao: "Leitura 1",
     autor: "Cuche, Denys",
     titulo: "A noção de cultura nas ciências sociais",
-    editora: "EDUSC · 2.ª edição",
+    editora: "Capítulo 3",
     capa: cucheCapaAsset.url,
     pdf: sintesePdfAsset.url,
-    ideiasTitulo: "Perguntas que o livro levanta",
+    ideiasTitulo: "ALGUMAS PERGUNTAS QUE O CAPÍTULO LEVANTA:",
     ideias: [
       "Se todo o ser humano é um ser cultural, como recebe a cultura do seu grupo e até que ponto o seu comportamento é por ela determinado?",
       "Um mesmo indivíduo pode mudar de cultura ou participar simultaneamente de várias culturas?",
