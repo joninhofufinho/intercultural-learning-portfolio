@@ -274,6 +274,70 @@ export const leituras: Leitura[] = [
       ],
     },
   },
+  {
+    sessao: "Leitura 3",
+    autor: "Santos Rego, M. A. (coord.); Lorenzo Moledo, M. del M.; Etxeberría Balerdi, F.; Mínguez Vallejos, R.; Jordán Sierra, J. A.; Ruiz Román, C.",
+    titulo: "Contribuição do discurso intercultural para uma nova teoria da educação",
+    editora: "In Boavida, J. & García del Dujo, Á. (coord.), Teoria da Educação: Contributos Ibéricos, Imprensa da Universidade de Coimbra, 2007, pp. 447–470",
+    pdf: discursoPdfAsset.url,
+    pdfEtiqueta: "Ler o texto (PDF)",
+    ideiasTitulo: "IDEIAS-CHAVE DO CAPÍTULO:",
+    ideias: [
+      "O discurso intercultural como contributo para uma nova teoria da educação, capaz de responder à diversidade das sociedades atuais.",
+      "A crítica aos modelos uniformizados de educação, que ignoram as necessidades e características individuais dos alunos.",
+      "A diversidade cultural como valor e oportunidade de enriquecimento, e não como problema a resolver.",
+      "A distinção entre integração e inclusão: estar presente na escola não significa participar efetivamente nela.",
+      "O alerta contra a «pedagogia do cuscuz»: abordagens folclóricas da diversidade baseadas em estereótipos e culturalismos.",
+      "A comunicação e o diálogo como condições para a compreensão mútua e a desconstrução do preconceito.",
+      "A escola como um dos primeiros espaços de contacto com a diferença e de confronto com outras culturas.",
+      "A educação intercultural como compromisso com a igualdade de oportunidades, dentro e fora da escola.",
+    ],
+    reflexao: {
+      titulo: "Reflexão",
+      blocos: [
+        {
+          tipo: "p",
+          texto:
+            "Apesar de ter sido escrito há cerca de 20 anos, este texto apresenta ideias bastante relevantes, revelando um pensamento à frente do seu tempo no que diz respeito aos conceitos de interculturalidade, inclusão, diversidade, uniformidade e educação de necessidades especiais. No entanto, um dos aspetos em que falha é ao assumir que a igualdade no acesso à educação é uma questão já resolvida.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "Em Portugal, foi apenas após o 25 de Abril de 1974 que a educação deixou de ser um privilégio de alguns e passou a ser um direito de todos. Contudo, o reconhecimento deste direito não significa que toda a população tenha as mesmas oportunidades ou a mesma facilidade no acesso à educação.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "Ainda hoje, existem barreiras que dificultam o acesso e a inclusão de determinadas minorias e culturas no meio escolar. As escolas portuguesas continuam a revelar fragilidades no que toca à integração e inclusão, nem sempre dispondo das condições necessárias para garantir que todos os alunos possam aprender, participar ativamente e permanecer no sistema educativo. Estas dificuldades não se limitam à escola, estendendo-se também a outros contextos educativos.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "Há algumas décadas, a escola era um espaço marcado pela segregação e pela homogeneidade, no qual a diversidade cultural tinha pouca expressão. Ao contrário do que acontece atualmente, o contacto com diferentes culturas não fazia parte da experiência quotidiana das crianças em contexto escolar. Hoje, a escola constitui frequentemente um dos primeiros espaços de contacto com a diferença e de confronto com outras culturas.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "A crescente diversidade do meio escolar poderia representar uma oportunidade de enriquecimento cultural e de aprendizagem. No entanto, apesar de a escola já não ser tão homogénea, a educação continua a estabelecer-se por meio de modelos uniformizados, que nem sempre respondem às necessidades e características individuais dos alunos. A educação não deveria ser neutra perante estas diferenças; pelo contrário, deveria existir uma maior consciência das suas implicações e da forma como influenciam as experiências e oportunidades de cada aluno.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "Neste contexto, a pedagogia do cuscuz merece uma reflexão crítica, uma vez que tende a abordar a diversidade cultural com base em estereótipos e culturalismos, contribuindo para a categorização dos indivíduos e para o preconceito. A desconstrução destas ideias exige diálogo, comunicação e reflexão crítica. A comunicação é, por isso, essencial para promover a compreensão mútua e valorizar as diferenças, não com o objetivo de as eliminar, mas de as reconhecer como parte da diversidade.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "É importante, ainda, distinguir os conceitos de inclusão e integração, frequentemente utilizados como sinónimos, apesar de terem implicações diferentes. Uma escola é inclusiva ao criar oportunidades e variadas respostas para todos os alunos e integradora quando permite aos indivíduos adaptarem-se a este contexto.",
+        },
+        {
+          tipo: "p",
+          texto:
+            "Deste modo, importa reconhecer que estar incluído numa sala de aula não significa, necessariamente, estar integrado na comunidade escolar ou na sociedade. A verdadeira inclusão exige mais do que a presença física dos alunos: implica garantir a sua participação efetiva, o reconhecimento das suas diferenças e a igualdade de oportunidades, tanto no contexto educativo como na sociedade em geral.",
+        },
+      ],
+    },
+  },
 ];
 
 export const trabalhoPares = {
