@@ -40,6 +40,23 @@ function Leituras() {
                 )}
               </div>
               <div className="md:col-span-8">
+                {l.imagem && (
+                  <figure className="mb-10">
+                    <img
+                      src={l.imagem}
+                      alt={l.imagemLegenda ?? `Imagem relacionada com ${l.titulo}`}
+                      loading="lazy"
+                      width={1648}
+                      height={799}
+                      className="w-full rounded-sm border border-border shadow-paper"
+                    />
+                    {l.imagemLegenda && (
+                      <figcaption className="kicker mt-3 text-muted-foreground">
+                        {l.imagemLegenda}
+                      </figcaption>
+                    )}
+                  </figure>
+                )}
                 <p className="text-sm font-semibold text-muted-foreground">{l.autor}</p>
                 <h2 className="mt-1 text-4xl font-medium">{l.titulo}</h2>
                 {l.editora && <p className="mt-2 font-serif italic text-muted-foreground">{l.editora}</p>}

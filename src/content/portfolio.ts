@@ -9,6 +9,7 @@ import colagemAsset from "@/assets/wix/fotos-de-partida-colagem.jpg.asset.json";
 import joniAsset from "@/assets/wix/joni-freitas.jpg.asset.json";
 import cucheCapaAsset from "@/assets/wix/cuche-capa.jpg.asset.json";
 import sintesePdfAsset from "@/assets/wix/sintese-cuche.pdf.asset.json";
+import teoriaDaEducacaoPaginasAsset from "@/assets/teoria-da-educacao-paginas.png.asset.json";
 
 export const images = { capa, leiturasImg, paresImg, pesquisaImg, grupoImg, reflexaoImg };
 
@@ -133,6 +134,8 @@ export type Leitura = {
   pdfEtiqueta?: string;
   ideiasTitulo?: string;
   ideias: string[];
+  imagem?: string;
+  imagemLegenda?: string;
   reflexao?: { titulo: string; blocos: ReflexaoBloco[] };
   comentario?: string;
 };
@@ -332,6 +335,9 @@ export const leituras: Leitura[] = [
         },
       ],
     },
+    imagem: teoriaDaEducacaoPaginasAsset.url,
+    imagemLegenda:
+      "Ficha técnica e página de rosto da obra Teoria da Educação: Contributos Ibéricos (Imprensa da Universidade de Coimbra, 2007).",
   },
 ];
 
