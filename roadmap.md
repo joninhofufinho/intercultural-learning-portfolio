@@ -13,4 +13,4 @@
 - [ ] Aguarda Joni: textos reais dos trabalhos (pares, pesquisa, grupo, reflexão)
 - [ ] Aguarda Joni: lista de referências da UC (só Cuche está confirmada)
 - [ ] Aguarda Joni: decidir as imagens de cabeçalho das 5 secções (tons quentes antigos)
-- [ ] Mover a foto das páginas do livro para antes do título da Leitura 3 (pedido 21-11-2026 20:05 UTC)
+- [x] Mover a foto das páginas do livro para antes do título da Leitura 3 (pedido 21-11-2026 20:05 UTC)
