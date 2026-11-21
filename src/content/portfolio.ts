@@ -336,8 +336,7 @@ export const leituras: Leitura[] = [
       ],
     },
     imagem: teoriaDaEducacaoPaginasAsset.url,
-    imagemLegenda:
-      "Ficha técnica e página de rosto da obra Teoria da Educação: Contributos Ibéricos (Imprensa da Universidade de Coimbra, 2007).",
+    imagemLegenda: "\n",
   },
 ];
 
