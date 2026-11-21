@@ -9,6 +9,7 @@
 - [x] Reflexão sobre a leitura de Cuche acrescentada às Leituras (depois das perguntas)
 - [x] Botão "Síntese da Leitura" com o PDF da síntese do Cuche enviado pela Joni
 - [x] Leitura 3 (discurso intercultural, Santos Rego et al.) com reflexão e PDF
+- [x] Ideias-chave da Leitura 3 escritas a partir da síntese da Joni
 - [ ] Aguarda Joni: textos reais dos trabalhos (pares, pesquisa, grupo, reflexão)
 - [ ] Aguarda Joni: lista de referências da UC (só Cuche está confirmada)
 - [ ] Aguarda Joni: decidir as imagens de cabeçalho das 5 secções (tons quentes antigos)
