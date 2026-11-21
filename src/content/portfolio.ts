@@ -9,7 +9,6 @@ import colagemAsset from "@/assets/wix/fotos-de-partida-colagem.jpg.asset.json";
 import joniAsset from "@/assets/wix/joni-freitas.jpg.asset.json";
 import cucheCapaAsset from "@/assets/wix/cuche-capa.jpg.asset.json";
 import sintesePdfAsset from "@/assets/wix/sintese-cuche.pdf.asset.json";
-import discursoPdfAsset from "@/assets/discurso-intercultural.pdf.asset.json";
 
 export const images = { capa, leiturasImg, paresImg, pesquisaImg, grupoImg, reflexaoImg };
 
@@ -279,15 +278,11 @@ export const leituras: Leitura[] = [
     autor: "Santos Rego, M. A. (coord.); Lorenzo Moledo, M. del M.; Etxeberría Balerdi, F.; Mínguez Vallejos, R.; Jordán Sierra, J. A.; Ruiz Román, C.",
     titulo: "Contribuição do discurso intercultural para uma nova teoria da educação",
     editora: "In Boavida, J. & García del Dujo, Á. (coord.), Teoria da Educação: Contributos Ibéricos, Imprensa da Universidade de Coimbra, 2007, pp. 447–470",
-    pdf: discursoPdfAsset.url,
-    pdfEtiqueta: "Ler o texto (PDF)",
     ideiasTitulo: "IDEIAS-CHAVE DO CAPÍTULO:",
     ideias: [
       "O texto aborda a importância da educação intercultural, defendendo que a educação deve reconhecer e valorizar as diferenças culturais.",
       "Numa sociedade multicultural e de crescente diversidade, esta não deve ser vista como um problema, mas como uma oportunidade de aprendizagem e enriquecimento. Para que tal seja possível, é necessário ultrapassar preconceitos, estereótipos e discriminação e promover a inclusão e o respeito, fator para atingir a igualdade de oportunidades.",
-      "",
       "A educação intercultural não consiste em conhecer outras culturas; muito para além disso, é importante a comunicação e a interação entre pessoas culturalmente distintas. Esta convivência permite partilhar experiências e compreender diferentes perspetivas, o que permite reconhecer semelhanças, sem desvalorizar as diferenças.",
-      "",
       "O papel dos professores e das instituições educativas é imprescindível na construção de ambientes inclusivos, o que torna importante a formação dos profissionais e a aprendizagem cooperativa.",
       "A participação das famílias e a colaboração entre a escola e a comunidade também se torna fundamental na inclusão.",
       "Os autores defendem que a competência intercultural envolve três dimensões principais: conhecimentos, para compreender diferentes culturas; capacidades, para comunicar e interagir com pessoas diferentes; e atitudes, como o respeito, a abertura, a empatia e a flexibilidade.",
