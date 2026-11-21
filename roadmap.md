@@ -14,3 +14,5 @@
 - [ ] Aguarda Joni: lista de referências da UC (só Cuche está confirmada)
 - [ ] Aguarda Joni: decidir as imagens de cabeçalho das 5 secções (tons quentes antigos)
 - [x] Mover a foto das páginas do livro para antes do título da Leitura 3 (pedido 21-11-2026 20:05 UTC)
+- [x] Leitura 2 (Sam & Berry, 2006) com referência e foto da página de rosto
+- [ ] Aguarda Joni: síntese/reflexão da Leitura 2

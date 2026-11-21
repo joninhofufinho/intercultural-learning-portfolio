@@ -10,6 +10,7 @@ import joniAsset from "@/assets/wix/joni-freitas.jpg.asset.json";
 import cucheCapaAsset from "@/assets/wix/cuche-capa.jpg.asset.json";
 import sintesePdfAsset from "@/assets/wix/sintese-cuche.pdf.asset.json";
 import teoriaDaEducacaoPaginasAsset from "@/assets/teoria-da-educacao-paginas.png.asset.json";
+import cambridgeHandbookAsset from "@/assets/cambridge-handbook-acculturation.png.asset.json";
 
 export const images = { capa, leiturasImg, paresImg, pesquisaImg, grupoImg, reflexaoImg };
 
@@ -275,6 +276,14 @@ export const leituras: Leitura[] = [
         },
       ],
     },
+  },
+  {
+    sessao: "Leitura 2",
+    autor: "Sam, D. L., & Berry, J. W. (2006)",
+    titulo: "The Cambridge handbook of acculturation psychology",
+    editora: "Capítulos 2 e 3, pp. 11–42 · Cambridge University Press",
+    capa: cambridgeHandbookAsset.url,
+    ideias: [],
   },
   {
     sessao: "Leitura 3",

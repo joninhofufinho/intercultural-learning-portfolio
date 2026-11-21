@@ -61,6 +61,8 @@ function Leituras() {
                 <h2 className="mt-1 text-4xl font-medium">{l.titulo}</h2>
                 {l.editora && <p className="mt-2 font-serif italic text-muted-foreground">{l.editora}</p>}
 
+                {l.ideias.length > 0 && (
+                <>
                 <h3 className="kicker mt-8 text-muted-foreground">{l.ideiasTitulo ?? "Ideias-chave"}</h3>
                 <ul className="mt-4 space-y-3">
                   {l.ideias.map((i) => (
@@ -70,6 +72,8 @@ function Leituras() {
                     </li>
                   ))}
                 </ul>
+                </>
+                )}
 
                 {l.reflexao && (
                   <div className="mt-10 rounded-sm border border-border bg-card p-6 sm:p-9">
