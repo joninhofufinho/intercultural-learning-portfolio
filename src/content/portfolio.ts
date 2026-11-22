@@ -357,15 +357,16 @@ export const leituras: Leitura[] = [
     editora:
       "Revista Espaço do Currículo, v. 13, n. Especial, pp. 678–686, 2020 · http://periodicos.ufpb.br/ojs2/index.php",
     ideias: [
-      "A decolonialidade é um projeto ético-político que exige desnaturalizar a colonialidade presente na escola, reconhecer saberes subalternizados e construir uma educação intercultural crítica orientada para a justiça social.",
-      "Igualdade e diferença: a justiça exige combater as desigualdades e respeitar as diferenças culturais. Igualdade não significa tratar todos como se fossem iguais.",
-      "Interseccionalidade: analisa como diferentes formas de opressão se cruzam, como o racismo, o sexismo e as desigualdades económicas.",
-      "Empoderamento: é o processo pelo qual pessoas e grupos marginalizados desenvolvem consciência crítica, autonomia e capacidade para transformar a sociedade. Possui dimensões epistemológica, subjetiva, política e económica.",
-      "Branquitude: refere-se aos privilégios sociais e históricos associados à condição de pessoa branca. A autora defende que a escola deve questionar esses privilégios e combater o racismo estrutural.",
-      "Ecologia de saberes: defende o diálogo entre o conhecimento científico e outros saberes, valorizando conhecimentos de diferentes culturas sem rejeitar a ciência.",
+      "A decolonialidade questiona as estruturas coloniais que continuam a privilegiar determinados grupos e conhecimentos, especialmente os de origem europeia.",
+      "A interculturalidade crítica busca construir sociedades democráticas articulando igualdade e reconhecimento das diferenças culturais. Não se limita a apresentar diferentes culturas: procura combater as desigualdades e transformar as relações de poder.",
+      "Interseccionalidade analisa como diferentes formas de opressão se cruzam, como o racismo, o sexismo e as desigualdades económicas.",
+      "Empoderamento é o processo pelo qual pessoas e grupos marginalizados desenvolvem consciência crítica, autonomia e capacidade para transformar a sociedade. Possui dimensões epistemológica, subjetiva, política e económica.",
+      "A Branquitude refere-se aos privilégios sociais e históricos associados à condição de pessoa branca. A autora defende que a escola deve questionar esses privilégios e combater o racismo estrutural.",
+      "A ecologia de saberes defende o diálogo entre o conhecimento científico e outros saberes, valorizando conhecimentos de diferentes culturas sem rejeitar a ciência.",
       "O pensamento abissal é uma forma de pensar e organizar o mundo através de uma linha invisível que separa aqueles que são reconhecidos como sujeitos de direitos e de conhecimento daqueles que são excluídos e considerados inexistentes.",
       "A autora defende que é necessário transformar a escola, questionando os currículos eurocêntricos e a homogeneização do ensino. Também é fundamental valorizar as práticas dos professores e dar voz aos grupos historicamente marginalizados.",
     ],
+    ideiasTitulo: "IDEIAS-CHAVE DO ARTIGO:",
     imagem: candauArtigoAsset.url,
     reflexao: {
       titulo: "Reflexão",
