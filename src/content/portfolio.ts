@@ -356,7 +356,14 @@ export const leituras: Leitura[] = [
     titulo: "Diferenças, educação intercultural e decolonialidade: temas insurgentes",
     editora:
       "Revista Espaço do Currículo, v. 13, n. Especial, pp. 678–686, 2020 · http://periodicos.ufpb.br/ojs2/index.php",
-    ideias: [],
+    ideiasTitulo: "Os cinco temas principais",
+    ideias: [
+      "Igualdade e diferença: a justiça exige combater as desigualdades e respeitar as diferenças culturais. Igualdade não significa tratar todos como se fossem iguais.",
+      "Interseccionalidade: analisa como diferentes formas de opressão se cruzam, como o racismo, o sexismo e as desigualdades económicas.",
+      "Empoderamento: é o processo pelo qual pessoas e grupos marginalizados desenvolvem consciência crítica, autonomia e capacidade para transformar a sociedade. Possui dimensões epistemológica, subjetiva, política e económica.",
+      "Branquitude: refere-se aos privilégios sociais e históricos associados à condição de pessoa branca. A autora defende que a escola deve questionar esses privilégios e combater o racismo estrutural.",
+      "Ecologia de saberes: defende o diálogo entre o conhecimento científico e outros saberes, valorizando conhecimentos de diferentes culturas sem rejeitar a ciência.",
+    ],
     imagem: candauArtigoAsset.url,
     reflexao: {
       titulo: "Reflexão",
