@@ -16,3 +16,5 @@
 - [x] Mover a foto das páginas do livro para antes do título da Leitura 3 (pedido 21-11-2026 20:05 UTC)
 - [x] Leitura 2 (Sam & Berry, 2006) com referência e foto da página de rosto
 - [x] Botão «Síntese da Leitura» com o PDF da síntese de Sam & Berry (Leitura 2)
+- [x] Leitura 4 (Candau, 2020, Revista Espaço do Currículo) com referência e imagem da primeira página do artigo
+- [ ] Aguarda Joni: síntese/reflexão da Leitura 4 (e ideias-chave da Leitura 2, se quiser)

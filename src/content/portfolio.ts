@@ -12,6 +12,7 @@ import sintesePdfAsset from "@/assets/wix/sintese-cuche.pdf.asset.json";
 import teoriaDaEducacaoPaginasAsset from "@/assets/teoria-da-educacao-paginas.png.asset.json";
 import cambridgeHandbookAsset from "@/assets/cambridge-handbook-acculturation.png.asset.json";
 import sinteseSamBerryAsset from "@/assets/sintese-sam-berry.pdf.asset.json";
+import candauArtigoAsset from "@/assets/candau-2020-artigo.png.asset.json";
 
 export const images = { capa, leiturasImg, paresImg, pesquisaImg, grupoImg, reflexaoImg };
 
@@ -348,6 +349,15 @@ export const leituras: Leitura[] = [
     },
     imagem: teoriaDaEducacaoPaginasAsset.url,
     imagemLegenda: "\n",
+  },
+  {
+    sessao: "Leitura 4",
+    autor: "Candau, Vera Maria",
+    titulo: "Diferenças, educação intercultural e decolonialidade: temas insurgentes",
+    editora:
+      "Revista Espaço do Currículo, v. 13, n. Especial, pp. 678–686, 2020 · http://periodicos.ufpb.br/ojs2/index.php",
+    ideias: [],
+    imagem: candauArtigoAsset.url,
   },
 ];
 
