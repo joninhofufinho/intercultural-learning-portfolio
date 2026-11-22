@@ -1,10 +1,4 @@
 // Conteúdo do portefólio — edite aqui os textos de cada secção.
-import capa from "@/assets/capa.jpg";
-import leiturasImg from "@/assets/leituras.jpg";
-import paresImg from "@/assets/pares.jpg";
-import pesquisaImg from "@/assets/pesquisa.jpg";
-import grupoImg from "@/assets/grupo.jpg";
-import reflexaoImg from "@/assets/reflexao.jpg";
 import colagemAsset from "@/assets/wix/fotos-de-partida-colagem.jpg.asset.json";
 import joniAsset from "@/assets/wix/joni-freitas.jpg.asset.json";
 import cucheCapaAsset from "@/assets/wix/cuche-capa.jpg.asset.json";
@@ -14,7 +8,6 @@ import cambridgeHandbookAsset from "@/assets/cambridge-handbook-acculturation.pn
 import sinteseSamBerryAsset from "@/assets/sintese-sam-berry.pdf.asset.json";
 import candauArtigoAsset from "@/assets/candau-2020-artigo.png.asset.json";
 
-export const images = { capa, leiturasImg, paresImg, pesquisaImg, grupoImg, reflexaoImg };
 
 export const info = {
   titulo: "Entre leituras, reflexões, ideias e diálogos",
@@ -71,42 +64,36 @@ export const sections: {
   numero: string;
   titulo: string;
   resumo: string;
-  imagem: string;
 }[] = [
   {
     to: "/leituras",
     numero: "01",
     titulo: "Leituras das Aulas",
     resumo: "Sínteses e comentários críticos aos textos trabalhados em cada sessão.",
-    imagem: leiturasImg,
   },
   {
     to: "/trabalho-pares",
     numero: "02",
     titulo: "Trabalho a Pares",
     resumo: "Análise conjunta de uma situação de diversidade cultural em contexto escolar.",
-    imagem: paresImg,
   },
   {
     to: "/trabalho-pesquisa",
     numero: "03",
     titulo: "Trabalho de Pesquisa",
     resumo: "Investigação individual sobre práticas de inclusão de alunos migrantes.",
-    imagem: pesquisaImg,
   },
   {
     to: "/trabalho-grupo",
     numero: "04",
     titulo: "Trabalho de Grupo",
     resumo: "Projeto colaborativo: uma proposta de atividade intercultural para a sala de aula.",
-    imagem: grupoImg,
   },
   {
     to: "/reflexao",
     numero: "05",
     titulo: "Reflexão",
     resumo: "Balanço pessoal do percurso, aprendizagens e desafios futuros.",
-    imagem: reflexaoImg,
   },
 ];
 

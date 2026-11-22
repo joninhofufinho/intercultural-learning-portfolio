@@ -111,17 +111,7 @@ function FolhaDeRosto() {
 
         <div className="mt-10 grid gap-10 lg:grid-cols-12">
           <Link to={destaque.to} className="group lg:col-span-7">
-            <div className="overflow-hidden rounded-sm">
-              <img
-                src={destaque.imagem}
-                alt=""
-                loading="lazy"
-                width={1408}
-                height={1008}
-                className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-              />
-            </div>
-            <p className="kicker mt-5 text-primary">{destaque.numero}</p>
+            <p className="kicker text-primary">{destaque.numero}</p>
             <h3 className="mt-2 text-4xl font-medium transition-colors group-hover:text-primary">
               {destaque.titulo}
             </h3>
@@ -131,15 +121,7 @@ function FolhaDeRosto() {
           <ul className="divide-y divide-border lg:col-span-5">
             {resto.map((s) => (
               <li key={s.to}>
-                <Link to={s.to} className="group grid grid-cols-[6rem_1fr] gap-5 py-5 first:pt-0">
-                  <img
-                    src={s.imagem}
-                    alt=""
-                    loading="lazy"
-                    width={1408}
-                    height={1008}
-                    className="aspect-square w-full rounded-sm object-cover"
-                  />
+                <Link to={s.to} className="group block py-5 first:pt-0">
                   <div>
                     <p className="kicker text-primary">{s.numero}</p>
                     <h3 className="mt-1 text-2xl font-medium transition-colors group-hover:text-primary">

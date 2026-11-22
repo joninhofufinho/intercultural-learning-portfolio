@@ -15,22 +15,13 @@ export function SectionHero({
   return (
     <section className="mx-auto max-w-6xl px-5 pt-14 sm:px-8 sm:pt-20">
       <div className="grid gap-10 lg:grid-cols-12 lg:items-end">
-        <div className="animate-rise lg:col-span-6">
+        <div className="animate-rise lg:col-span-12">
           <p className="kicker text-primary">Secção {s.numero}</p>
           <h1 className="mt-4 text-5xl font-medium leading-[1.02] text-foreground sm:text-6xl lg:text-7xl">
             {s.titulo}
           </h1>
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">{lead}</p>
         </div>
-        <figure className="animate-rise lg:col-span-6 [animation-delay:120ms]">
-          <img
-            src={s.imagem}
-            alt={imageAlt}
-            width={1408}
-            height={1008}
-            className="aspect-[4/3] w-full rounded-sm object-cover shadow-paper"
-          />
-        </figure>
       </div>
       <div className="rule-ornament mt-14" aria-hidden>
         <span className="font-serif text-lg">✦</span>
