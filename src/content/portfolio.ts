@@ -356,7 +356,6 @@ export const leituras: Leitura[] = [
     titulo: "Diferenças, educação intercultural e decolonialidade: temas insurgentes",
     editora:
       "Revista Espaço do Currículo, v. 13, n. Especial, pp. 678–686, 2020 · http://periodicos.ufpb.br/ojs2/index.php",
-    ideiasTitulo: "Os cinco temas principais",
     ideias: [
       "Igualdade e diferença: a justiça exige combater as desigualdades e respeitar as diferenças culturais. Igualdade não significa tratar todos como se fossem iguais.",
       "Interseccionalidade: analisa como diferentes formas de opressão se cruzam, como o racismo, o sexismo e as desigualdades económicas.",
