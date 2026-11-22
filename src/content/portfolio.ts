@@ -357,6 +357,7 @@ export const leituras: Leitura[] = [
     editora:
       "Revista Espaço do Currículo, v. 13, n. Especial, pp. 678–686, 2020 · http://periodicos.ufpb.br/ojs2/index.php",
     ideias: [
+      "A autora defende uma educação democrática, justa e plural, que reconheça a diversidade cultural e combata o racismo, os preconceitos e as desigualdades sociais.",
       "A decolonialidade questiona as estruturas coloniais que continuam a privilegiar determinados grupos e conhecimentos, especialmente os de origem europeia.",
       "A interculturalidade crítica busca construir sociedades democráticas articulando igualdade e reconhecimento das diferenças culturais. Não se limita a apresentar diferentes culturas: procura combater as desigualdades e transformar as relações de poder.",
       "Interseccionalidade analisa como diferentes formas de opressão se cruzam, como o racismo, o sexismo e as desigualdades económicas.",
