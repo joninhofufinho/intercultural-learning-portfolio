@@ -22,8 +22,6 @@ export const Route = createFileRoute("/")({
 });
 
 function FolhaDeRosto() {
-  const destaque = sections[0]!;
-  const resto = sections.slice(1);
   return (
     <>
       {/* Capa */}
@@ -109,31 +107,19 @@ function FolhaDeRosto() {
           <span className="kicker text-muted-foreground">5 secções</span>
         </div>
 
-        <div className="mt-10 grid gap-10 lg:grid-cols-12">
-          <Link to={destaque.to} className="group lg:col-span-7">
-            <p className="kicker text-primary">{destaque.numero}</p>
-            <h3 className="mt-2 text-4xl font-medium transition-colors group-hover:text-primary">
-              {destaque.titulo}
-            </h3>
-            <p className="mt-3 max-w-lg text-muted-foreground">{destaque.resumo}</p>
-          </Link>
-
-          <ul className="divide-y divide-border lg:col-span-5">
-            {resto.map((s) => (
-              <li key={s.to}>
-                <Link to={s.to} className="group block py-5 first:pt-0">
-                  <div>
-                    <p className="kicker text-primary">{s.numero}</p>
-                    <h3 className="mt-1 text-2xl font-medium transition-colors group-hover:text-primary">
-                      {s.titulo}
-                    </h3>
-                    <p className="mt-1 text-sm text-muted-foreground">{s.resumo}</p>
-                  </div>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ul className="mt-10 divide-y divide-border">
+          {sections.map((s) => (
+            <li key={s.to}>
+              <Link to={s.to} className="group block py-5 first:pt-0">
+                <p className="kicker text-primary">{s.numero}</p>
+                <h3 className="mt-1 text-2xl font-medium transition-colors group-hover:text-primary">
+                  {s.titulo}
+                </h3>
+                <p className="mt-1 text-sm text-muted-foreground">{s.resumo}</p>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </section>
 
       {/* Referências da UC */}
