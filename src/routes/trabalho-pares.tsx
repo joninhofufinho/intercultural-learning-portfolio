@@ -28,7 +28,7 @@ function TrabalhoPares() {
             </div>
             <figure className="lg:col-span-4">
               <div className="border-l-2 border-primary bg-card p-6 shadow-paper">
-                <figcaption className="kicker text-muted-foreground">Referência de partida</figcaption>
+                <figcaption className="kicker text-muted-foreground">Leitura de partida</figcaption>
                 <p className="mt-3 font-serif text-sm italic leading-relaxed text-foreground/85">
                   {t.referencia}
                 </p>
