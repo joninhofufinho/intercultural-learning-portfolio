@@ -18,4 +18,6 @@
 - [x] Botão «Síntese da Leitura» com o PDF da síntese de Sam & Berry (Leitura 2)
 - [x] Leitura 4 (Candau, 2020, Revista Espaço do Currículo) com referência e imagem da primeira página do artigo
 - [x] Reflexão da Leitura 4 adicionada
+- [x] Introdução da página Trabalho a Pares: título do trabalho, objetivo e referência Caetano, Dwyer & Santos (2024)
 - [ ] Aguarda Joni (opcional): síntese da Leitura 4 (e ideias-chave da Leitura 2, se quiser)
+- [ ] Aguarda Joni: texto real do Trabalho a Pares (desenvolvimento, estratégias, aprendizagem a dois) — por agora mantém-se o texto inventado

@@ -4,7 +4,7 @@ import { SectionBody, SectionHero, SectionPager, sectionHead } from "@/component
 
 export const Route = createFileRoute("/trabalho-pares")({
   head: () =>
-    sectionHead("Trabalho a Pares", "Análise a pares de um caso de acolhimento de uma aluna recém-chegada, com propostas de estratégias interculturais."),
+    sectionHead("Trabalho a Pares", "Experiências de estranhamento cultural narradas a dois, em diálogo com fotografia falada e vídeo."),
   component: TrabalhoPares,
 });
 
@@ -13,11 +13,32 @@ function TrabalhoPares() {
     <>
       <SectionHero
         path="/trabalho-pares"
-        lead="Um estudo de caso analisado a dois, onde cruzámos as leituras da unidade curricular com uma situação real de sala de aula."
+        lead="Um trabalho a dois sobre experiências de estranhamento cultural, construído em diálogo com recursos audiovisuais: fotografia falada e vídeo."
         imageAlt="Dois estudantes sentados lado a lado a partilhar um caderno"
       />
       <SectionBody>
-        <div className="grid gap-12 lg:grid-cols-12">
+        {/* Introdução */}
+        <section aria-labelledby="intro" className="border-b border-border pb-14">
+          <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
+            <div className="lg:col-span-8">
+              <p className="kicker text-primary">Introdução</p>
+              <h2 id="intro" className="mt-3 text-3xl font-medium leading-tight text-foreground sm:text-4xl">
+                {t.titulo}
+              </h2>
+              <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">{t.objetivo}</p>
+            </div>
+            <figure className="lg:col-span-4">
+              <div className="border-l-2 border-primary bg-card p-6 shadow-paper">
+                <figcaption className="kicker text-muted-foreground">Referência de partida</figcaption>
+                <p className="mt-3 font-serif text-sm italic leading-relaxed text-foreground/85">
+                  {t.referencia}
+                </p>
+              </div>
+            </figure>
+          </div>
+        </section>
+
+        <div className="mt-14 grid gap-12 lg:grid-cols-12">
           <aside className="lg:col-span-4">
             <div className="rounded-sm bg-card p-6 shadow-paper">
               <p className="kicker text-muted-foreground">Ficha do trabalho</p>
@@ -38,7 +59,7 @@ function TrabalhoPares() {
             </div>
           </aside>
           <article className="lg:col-span-8">
-            <h2 className="text-4xl font-medium">{t.titulo}</h2>
+            <h2 className="text-4xl font-medium">Desenvolvimento do trabalho</h2>
             <div className="prose-editorial mt-6">
               {t.desenvolvimento.map((p, i) => (
                 <p key={i} className={i === 0 ? "drop-cap" : ""}>{p}</p>

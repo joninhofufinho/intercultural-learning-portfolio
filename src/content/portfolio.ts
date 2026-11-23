@@ -75,7 +75,7 @@ export const sections: {
     to: "/trabalho-pares",
     numero: "02",
     titulo: "Trabalho a Pares",
-    resumo: "Análise conjunta de uma situação de diversidade cultural em contexto escolar.",
+    resumo: "Experiências de estranhamento cultural narradas a dois, com fotografia falada e vídeo.",
   },
   {
     to: "/trabalho-pesquisa",
@@ -371,11 +371,14 @@ export const leituras: Leitura[] = [
 ];
 
 export const trabalhoPares = {
-  titulo: "Entre duas línguas: o caso da Amina",
+  titulo:
+    "Experiências de estranhamento cultural – narrativas em diálogo com recursos audiovisuais (fotografia falada e vídeo)",
   elementos: ["Joni Freitas", "Nome do Colega"],
   data: "outubro de 2026",
   objetivo:
-    "Analisar um estudo de caso de uma aluna recém-chegada a uma escola do 1.º ciclo e propor estratégias de acolhimento à luz das leituras da unidade curricular.",
+    "Com este trabalho pretende-se desenvolver a capacidade de observação e de análise e interpretação de contextos e situações onde as problemáticas da diversidade, multiculturalidade e mediação sejam relevantes e cujas experiências associadas causam estranhamento.",
+  referencia:
+    "Caetano, A. P., Dwyer, S., & Santos, C. (2024). Processos dialógicos na produção de narrativas interculturais e intergeracionais, no ensino superior. Revista Ciências Humanas. Dossiê Educação, Humanização e Inclusão, 25(1), 27–53.",
   desenvolvimento: [
     "Partimos de um caso apresentado em aula: a Amina, 8 anos, chegou de Marrocos a meio do ano letivo e fala pouco português. A professora titular descreve-a como 'muito calada' e 'com dificuldades'.",
     "Discutimos em conjunto de que forma a leitura de Cardoso (1996) sobre expectativas diferenciadas ajuda a perceber que o silêncio da Amina pode ser lido como um défice ou como uma fase natural de adaptação linguística.",
