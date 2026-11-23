@@ -6,10 +6,12 @@ export function SectionHero({
   path,
   lead,
   imageAlt,
+  children,
 }: {
   path: SectionPath;
-  lead: string;
+  lead?: string;
   imageAlt: string;
+  children?: ReactNode;
 }) {
   const s = sections.find((x) => x.to === path)!;
   return (
@@ -20,7 +22,10 @@ export function SectionHero({
           <h1 className="mt-4 text-5xl font-medium leading-[1.02] text-foreground sm:text-6xl lg:text-7xl">
             {s.titulo}
           </h1>
-          <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">{lead}</p>
+          {lead ? (
+            <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">{lead}</p>
+          ) : null}
+          {children}
         </div>
       </div>
       <div className="rule-ornament mt-14" aria-hidden>

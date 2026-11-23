@@ -21,3 +21,4 @@
 - [x] Introdução da página Trabalho a Pares: título do trabalho, objetivo e referência Caetano, Dwyer & Santos (2024)
 - [ ] Aguarda Joni (opcional): síntese da Leitura 4 (e ideias-chave da Leitura 2, se quiser)
 - [ ] Aguarda Joni: texto real do Trabalho a Pares (desenvolvimento, estratégias, aprendizagem a dois) — por agora mantém-se o texto inventado
+- [x] Introdução do Trabalho a Pares movida para debaixo do título da secção

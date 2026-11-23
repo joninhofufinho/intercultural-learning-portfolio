@@ -15,14 +15,13 @@ function TrabalhoPares() {
         path="/trabalho-pares"
         lead="Um trabalho a dois sobre experiências de estranhamento cultural, construído em diálogo com recursos audiovisuais: fotografia falada e vídeo."
         imageAlt="Dois estudantes sentados lado a lado a partilhar um caderno"
-      />
-      <SectionBody>
-        {/* Introdução */}
-        <section aria-labelledby="intro" className="border-b border-border pb-14">
+      >
+        {/* Introdução, debaixo do título da secção */}
+        <section aria-labelledby="intro" className="mt-10 border-t border-border pt-8">
           <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
             <div className="lg:col-span-8">
               <p className="kicker text-primary">Introdução</p>
-              <h2 id="intro" className="mt-3 text-3xl font-medium leading-tight text-foreground sm:text-4xl">
+              <h2 id="intro" className="mt-3 text-2xl font-medium leading-snug text-foreground sm:text-3xl">
                 {t.titulo}
               </h2>
               <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">{t.objetivo}</p>
@@ -37,8 +36,9 @@ function TrabalhoPares() {
             </figure>
           </div>
         </section>
-
-        <div className="mt-14 grid gap-12 lg:grid-cols-12">
+      </SectionHero>
+      <SectionBody>
+        <div className="grid gap-12 lg:grid-cols-12">
           <aside className="lg:col-span-4">
             <div className="rounded-sm bg-card p-6 shadow-paper">
               <p className="kicker text-muted-foreground">Ficha do trabalho</p>
