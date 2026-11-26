@@ -5,6 +5,7 @@ import paresImg from "@/assets/pares.jpg";
 import pesquisaImg from "@/assets/pesquisa.jpg";
 import grupoImg from "@/assets/grupo.jpg";
 import reflexaoImg from "@/assets/reflexao.jpg";
+import revistaCienciasHumanasImg from "@/assets/revista-ciencias-humanas-25-1.jpg";
 import colagemAsset from "@/assets/wix/fotos-de-partida-colagem.jpg.asset.json";
 import joniAsset from "@/assets/wix/joni-freitas.jpg.asset.json";
 import cucheCapaAsset from "@/assets/wix/cuche-capa.jpg.asset.json";
@@ -277,6 +278,14 @@ export const leituras: Leitura[] = [
 ];
 
 export const trabalhoPares = {
+  leituraPartida: {
+    etiqueta: "Leitura de partida",
+    referencia:
+      "Caetano, A. P., Dwyer, S., & Santos, C. (2024). Processos dialógicos na produção de narrativas interculturais e intergeracionais, no ensino superior. Revista Ciências Humanas. Dossiê Educação, Humanização e Inclusão, 25(1), 27–53.",
+    imagem: revistaCienciasHumanasImg,
+    imagemAlt:
+      "Capa da Revista Ciências Humanas, volume 25, número 1 (jan./abr. 2024) — Dossiê Educação, Humanização e Inclusão",
+  },
   titulo: "Entre duas línguas: o caso da Amina",
   elementos: ["Joni Freitas", "Nome do Colega"],
   data: "outubro de 2026",

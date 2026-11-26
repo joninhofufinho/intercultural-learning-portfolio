@@ -17,6 +17,21 @@ function TrabalhoPares() {
         imageAlt="Dois estudantes sentados lado a lado a partilhar um caderno"
       />
       <SectionBody>
+        <div className="mb-12 flex flex-col gap-6 rounded-sm border border-border bg-card p-6 shadow-paper sm:flex-row sm:items-center sm:gap-8 sm:p-8">
+          <img
+            src={t.leituraPartida.imagem}
+            alt={t.leituraPartida.imagemAlt}
+            loading="lazy"
+            className="w-36 shrink-0 rounded-sm shadow-paper sm:w-44"
+          />
+          <div>
+            <p className="kicker text-primary">{t.leituraPartida.etiqueta}</p>
+            <p className="mt-3 font-serif text-lg leading-relaxed text-foreground sm:text-xl">
+              {t.leituraPartida.referencia}
+            </p>
+          </div>
+        </div>
+
         <div className="grid gap-12 lg:grid-cols-12">
           <aside className="lg:col-span-4">
             <div className="rounded-sm bg-card p-6 shadow-paper">
